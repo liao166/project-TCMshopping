@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>興德堂中藥房</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="headermenu">
+    <div class="desktop">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="nav">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <ul>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="product.html">產品介紹</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobile">
+      <div class="menubar">
+        <a href="index.html">
+          <img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="iconbar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
+      <div id="myLinks">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <div class="mobilenav">
+          <a href="about.html">關於我們</a>
+          <a href="product.html">產品介紹</a>
+          <a href="#">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="product">
+    <h2>產品介紹</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item"><a href="product.html">產品介紹</a></li>
+    </ol>
+    <div class="product_content">
+      <div class="sidebar">
+        <div class="accordion">藥膳包</div>
+        <div class="item">
+          <ul>
+            <li><a href="product-1.html">人參藥膳湯包</a></li>
+            <li><a href="#">當歸鴨湯包</a></li>
+            <li><a href="#">燒雞酒湯包</a></li>
+            <li><a href="#">薑母鴨湯包</a></li>
+            <li><a href="#">杜仲四物藥膳湯包</a></li>
+            <li><a href="#">四神湯包</a></li>
+            <li><a href="#">十全大補包</a></li>
+          </ul>
+        </div>
+
+        <div class="accordion">藥材茶飲與組合</div>
+        <div class="item">
+          <ul>
+            <li><a href="#">四物湯茶包</a></li>
+            <li><a href="#">四君子湯茶包</a></li>
+            <li><a href="#">桑菊飲茶包</a></li>
+            <li><a href="#">升麻葛根湯</a></li>
+            <li><a href="#">大柴胡湯</a></li>
+          </ul>
+        </div>
+
+        <div class="accordion">藥膏貼布</div>
+        <div class="item">
+          <ul>
+            <li><a href="#">中藥膏貼布</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="productlist">
+        <div class="card">
+          <div class="img">
+            <img src="images/人參藥膳湯1.jpg">
+            <img class="hidden" src="images/人參藥膳湯2.jpg">
+            <div class="hottext">熱銷推薦</div>
+          </div>
+          <div class="card-body">
+            <h3>人參藥膳湯包</h3>
+            <p>NT$120</p>
+            <div class="buttons">
+              <a href="product-1.html">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/當歸鴨湯包1.jpg">
+            <img class="hidden" src="images/當歸鴨湯包2.jpg">
+          </div>
+          <div class="card-body">
+            <h3>當歸鴨湯包</h3>
+            <p>NT$100</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/燒雞酒湯包1.jpg">
+            <img class="hidden" src="images/燒雞酒湯包2.jpg">
+            <div class="toptext">推薦</div>
+          </div>
+          <div class="card-body">
+            <h3>燒雞酒湯包</h3>
+            <p>NT$100</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/薑母鴨湯包1.jpg">
+            <img class="hidden" src="images/薑母鴨湯包2.jpg">
+          </div>
+          <div class="card-body">
+            <h3>薑母鴨湯包</h3>
+            <p>NT$80</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/杜仲四物藥膳湯包1.jpg">
+            <img class="hidden" src="images/杜仲四物藥膳湯包2.jpg">
+          </div>
+          <div class="card-body">
+            <h3>杜仲四物藥膳湯包</h3>
+            <p>NT$120</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/四神湯包1.jpg">
+            <img class="hidden" src="images/四神湯包2.jpg">
+            <div class="toptext">推薦</div>
+          </div>
+          <div class="card-body">
+            <h3>四神湯包</h3>
+            <p>NT$160</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/十全大補湯包1.jpg">
+            <img class="hidden" src="images/十全大補湯包2.jpg">
+            <div class="toptext">推薦</div>
+          </div>
+          <div class="card-body">
+            <h3>十全大補湯包</h3>
+            <p>NT$200</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/四物湯茶包1.jpg">
+            <img class="hidden" src="images/四物湯茶包2.jpg">
+            <div class="hottext">熱銷推薦</div>
+          </div>
+          <div class="card-body">
+            <h3>四物湯茶包</h3>
+            <p>NT$100</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/四君子湯茶包1.jpg">
+            <img class="hidden" src="images/四君子湯茶包2.jpg">
+          </div>
+          <div class="card-body">
+            <h3>四君子湯茶包</h3>
+            <p>NT$100</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/桑菊飲茶包1.jpg">
+            <img class="hidden" src="images/桑菊飲茶包2.jpg">
+            <div class="toptext">推薦</div>
+          </div>
+          <div class="card-body">
+            <h3>桑菊飲茶包</h3>
+            <p>NT$100</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/升麻葛根湯.jpg">
+          </div>
+          <div class="card-body">
+            <h3>升麻葛根湯</h3>
+            <p>NT$160</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/大柴胡湯.jpg">
+          </div>
+          <div class="card-body">
+            <h3>大柴胡湯</h3>
+            <p>NT$120</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/貼布.jpg">
+          </div>
+          <div class="card-body">
+            <h3>中藥膏貼布</h3>
+            <p>NT$160</p>
+            <div class="buttons">
+              <a href="#">
+                <button>
+                  <div class="text">購買</div>
+                  <div>⇀</div>
+                </button>
+              </a>
+              <button id="addcart">
+                <div class="text">加入購物車</div>
+                <div>⇀</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-1">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="right">
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-line"></i></a>
+        </div>
+        <div>電話：04-23381753</div>
+        <div>地址：台中市烏日區中山路二段91號</div>
+        <div>E-mail：3111kr35@gmail.com</div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <a href="about.html">關於我們</a>
+      <a href="product.html">產品介紹</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+    <div class="footer-3">
+      版權所有 copyright © 2023 興德堂中藥房 All Rights Reserved.
+    </div>
+  </footer>
+  <script>
+    var isAtTop = true; // 初始時頁面在頂部
+    var isAnimating = false; // 動畫是否已經觸發過
+    $(window).scroll(function () {
+      $(".headermenu").each(function () {
+        var pos = $(this).offset().top; // 選單的頂部位置
+        var winTop = $(window).scrollTop(); // 當前滾動位置
+
+        // 檢查是否回到頁面頂部
+        if (winTop == 0) {
+          isAtTop = true;
+          isAnimating = false; // 重置動畫狀態
+          $(this).removeClass("slide");
+        } else {
+          isAtTop = false;
+        }
+
+        if (!isAtTop && pos < winTop + 600 && !isAnimating) {
+          isAnimating = true;
+          $(this).addClass("slide");
+        }
+      });
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+      var y = document.getElementsByClassName('iconbar');
+      y[0].classList.toggle("change");
+    }
+
+    // sidebar
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var item = this.nextElementSibling;
+        if (item.style.maxHeight) {
+          item.style.maxHeight = null;
+        } else {
+          item.style.maxHeight = item.scrollHeight + "px";
+        }
+      });
+    }
+
+    var count = 0;
+
+    // 點擊按鈕時
+    $(".productlist #addcart").click(function () {
+      count++; // 計數器增加 1
+      $("header #cart-count").text(count); // 更新顯示的數字
+    });
+  </script>
+  <script type="text/javascript" src="js/gotop.js"></script>
+</body>
+
+</html>

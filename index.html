@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>興德堂中藥房</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+
+<body class="index">
+  <header class="headermenu">
+    <div class="desktop">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="nav">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <ul>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="product.html">產品介紹</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobile">
+      <div class="menubar">
+        <a href="index.html">
+          <img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="iconbar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
+      <div id="myLinks">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <div class="mobilenav">
+          <a href="about.html">關於我們</a>
+          <a href="product.html">產品介紹</a>
+          <a href="contact.html">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="index_section1">
+    <img src="images/圖6.jpg">
+  </section>
+
+  <section class="index_section2">
+    <h2>About Us</h2>
+    <div class="card slidediv">
+      <div class="img">
+        <img src="images/中藥櫃1.jpg">
+      </div>
+      <div class="card-body">
+        <div class="bor">
+          <h3>歡迎來到興德堂藥房!</h3>
+          <p>興德堂藥房開業已有六十幾年，歷經三代所傳承的接骨技術，加上中藥的調配，醫治了許多前來看骨頭受傷的人，讓他們都得以恢復。</p>
+          <div class="more">
+            <a href="about.html">了解更多
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="index_section3">
+    <h2>產品項目</h2>
+    <div class="product_class slidediv">
+      <a href="product.html">
+        <div class="card">
+          <div class="img">
+            <img src="images/圖8.jpg">
+          </div>
+          <div class="card-body">
+            <h3>藥膳包</h3>
+            <p>多項藥材組合，燉製美味或養生的湯品。</p>
+          </div>
+        </div>
+      </a>
+      <a href="product.html">
+        <div class="card">
+          <div class="img">
+            <img src="images/圖5.jpg">
+          </div>
+          <div class="card-body">
+            <h3>藥材茶飲與組合</h3>
+            <p>多項新鮮藥材組合搭配，可煎煮或沖泡養生茶飲。</p>
+          </div>
+        </div>
+      </a>
+      <a href="product.html">
+        <div class="card">
+          <div class="img">
+            <img src="images/貼布.jpg">
+          </div>
+          <div class="card-body">
+            <h3>藥膏貼布</h3>
+            <p>自製的祖傳祕方藥膏，專門醫治骨頭受傷相關的症狀。</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="index_section4">
+    <h2>推薦商品</h2>
+    <img src="images/圖7.jpg">
+    <div class="product slidediv">
+      <div #swiperRef="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="img">
+                <img src="images/人參藥膳湯1.jpg">
+                <img class="hidden" src="images/人參藥膳湯2.jpg">
+                <div class="toptext">推薦</div>
+              </div>
+              <div class="card-body">
+                <h3>人參藥膳湯包</h3>
+                <p>藥香味醇。</p>
+                <p>NT$120</p>
+                <a href="product-1.html">
+                  <button>
+                    前往購買
+                    <div>⇀</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="img">
+                <img src="images/燒雞酒湯包1.jpg">
+                <img class="hidden" src="images/燒雞酒湯包2.jpg">
+                <div class="toptext">推薦</div>
+              </div>
+              <div class="card-body">
+                <h3>燒雞酒湯包</h3>
+                <p>清淡爽口。</p>
+                <p>NT$100</p>
+                <a href="#">
+                  <button>
+                    前往購買
+                    <div>⇀</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="img">
+                <img src="images/四神湯包1.jpg">
+                <img class="hidden" src="images/四神湯包2.jpg">
+                <div class="toptext">推薦</div>
+              </div>
+              <div class="card-body">
+                <h3>四神湯包</h3>
+                <p>溫補好滋味。</p>
+                <p>NT$160</p>
+                <a href="#">
+                  <button>
+                    前往購買
+                    <div>⇀</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="img">
+                <img src="images/四物湯茶包1.jpg">
+                <img class="hidden" src="images/四物湯茶包2.jpg" alt="">
+                <div class="toptext">推薦</div>
+              </div>
+              <div class="card-body">
+                <h3>四物湯茶包</h3>
+                <p>補血、調理血液循環。</p>
+                <p>NT$100</p>
+                <a href="#">
+                  <button>
+                    前往購買
+                    <div>⇀</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="img">
+                <img src="images/四君子湯茶包1.jpg">
+                <img class="hidden" src="images/四君子湯茶包2.jpg" alt="">
+                <div class="toptext">推薦</div>
+              </div>
+              <div class="card-body">
+                <h3>四君子湯茶包</h3>
+                <p>補氣，健脾。</p>
+                <p>NT$120</p>
+                <a href="#">
+                  <button>
+                    前往購買
+                    <div>⇀</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="img">
+                <img src="images/桑菊飲茶包1.jpg">
+                <img class="hidden" src="images/桑菊飲茶包2.jpg" alt="">
+                <div class="toptext">推薦</div>
+              </div>
+              <div class="card-body">
+                <h3>桑菊飲茶包</h3>
+                <p>消炎退熱，止咳嗽。</p>
+                <p>NT$250</p>
+                <a href="#">
+                  <button>
+                    前往購買
+                    <div>⇀</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <a href="product.html" class="more">
+        <button>
+          查看更多
+          <div>⇀</div>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-1">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="right">
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-line"></i></a>
+        </div>
+        <div>電話：04-23381753</div>
+        <div>地址：台中市烏日區中山路二段91號</div>
+        <div>E-mail：3111kr35@gmail.com</div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <a href="about.html">關於我們</a>
+      <a href="product.html">產品介紹</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+    <div class="footer-3">
+      版權所有 copyright © 2023 興德堂中藥房 All Rights Reserved.
+    </div>
+  </footer>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        1240: { // 當畫面寬度 <= 1100px 時
+          slidesPerView: 3,
+        },
+        900: { // 當畫面寬度 <= 0px 時
+          slidesPerView: 2, // 這裡可以根據需要設置
+        },
+        0: { // 當畫面寬度 <= 0px 時
+          slidesPerView: 1, // 這裡可以根據需要設置
+        },
+      },
+    });
+
+    var isAtTop = true; // 初始時頁面在頂部
+    var isAnimating = false; // 動畫是否已經觸發過
+    $(window).scroll(function () {
+      $(".headermenu").each(function () {
+        var pos = $(this).offset().top; // 選單的頂部位置
+        var winTop = $(window).scrollTop(); // 當前滾動位置
+
+        // 檢查是否回到頁面頂部
+        if (winTop == 0) {
+          isAtTop = true;
+          isAnimating = false; // 重置動畫狀態
+          $(this).removeClass("slide");
+        } else {
+          isAtTop = false;
+        }
+
+        if (!isAtTop && pos < winTop + 600 && !isAnimating) {
+          isAnimating = true;
+          $(this).addClass("slide");
+        }
+      });
+
+      $(".slidediv").each(function () {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide1");
+        }
+      });
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+      var y = document.getElementsByClassName('iconbar');
+      y[0].classList.toggle("change");
+    }
+  </script>
+  <script type="text/javascript" src="js/gotop.js"></script>
+</body>
+
+</html>

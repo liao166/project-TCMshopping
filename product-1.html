@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>興德堂中藥房</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jquery.lightbox-0.5.css">
+  <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+</head>
+
+<body>
+  <header class="headermenu">
+    <div class="desktop">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="nav">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <ul>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="product.html">產品介紹</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobile">
+      <div class="menubar">
+        <a href="index.html">
+          <img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="iconbar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
+      <div id="myLinks">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <div class="mobilenav">
+          <a href="about.html">關於我們</a>
+          <a href="product.html">產品介紹</a>
+          <a href="contact.html">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="product-1">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item"><a href="product.html">產品介紹</a></li>
+      <li class="breadcrumb-item">人參藥膳湯包</li>
+    </ol>
+    <div class="card">
+      <div class="pics">
+        <div>
+          <img src="images/人參藥膳湯1.jpg">
+          <img src="images/人參藥膳湯2.jpg">
+        </div>
+        <div>
+          <a id="producthref" href="images/人參藥膳湯1.jpg"><img id="showproduct" src="images/人參藥膳湯1.jpg"></a>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>人參藥膳湯包</h3>
+        <ul>
+          <li>藥香味醇</li>
+          <li>清爽無燥</li>
+        </ul>
+        <p>成分：人參鬚、紅棗、當歸、川芎、玉竹</p>
+        <p>保存期限：6個月</p>
+        <p>NT$120 </p>
+        <div class="input-group">
+          <button onclick="changeQuantity(this,-1)">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <input type="text" id="qty" value="1">
+          <button onclick="changeQuantity(this,1)">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="buttons">
+          <a href="#">
+            <button>
+              <div class="text">購買</div>
+              <div>⇀</div>
+            </button>
+          </a>
+          <button id="addcart">
+            <div class="text">加入購物車</div>
+            <div>⇀</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-1">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="right">
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-line"></i></a>
+        </div>
+        <div>電話：04-23381753</div>
+        <div>地址：台中市烏日區中山路二段91號</div>
+        <div>E-mail：3111kr35@gmail.com</div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <a href="about.html">關於我們</a>
+      <a href="product.html">產品介紹</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+    <div class="footer-3">
+      版權所有 copyright © 2023 興德堂中藥房 All Rights Reserved.
+    </div>
+  </footer>
+  <script>
+    var isAtTop = true; // 初始時頁面在頂部
+    var isAnimating = false; // 動畫是否已經觸發過
+    $(window).scroll(function () {
+      $(".headermenu").each(function () {
+        var pos = $(this).offset().top; // 選單的頂部位置
+        var winTop = $(window).scrollTop(); // 當前滾動位置
+
+        // 檢查是否回到頁面頂部
+        if (winTop == 0) {
+          isAtTop = true;
+          isAnimating = false; // 重置動畫狀態
+          $(this).removeClass("slide");
+        } else {
+          isAtTop = false;
+        }
+
+        if (!isAtTop && pos < winTop + 600 && !isAnimating) {
+          isAnimating = true;
+          $(this).addClass("slide");
+        }
+      });
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+      var y = document.getElementsByClassName('iconbar');
+      y[0].classList.toggle("change");
+    }
+
+    $(function () {
+      //定義在滑鼠滑過圖片檔名田入主圖src中
+      $(".product-1 .card .pics div:first-child img").click(function () {
+        var imgsrc = $(this).attr("src");
+        $("#showproduct").attr({
+          "src": imgsrc
+        });
+        $("#producthref").attr({
+          "href": imgsrc
+        });
+      });
+      //將子圖片放到lightbox展示
+      $('#producthref').lightBox({ maxHeight: $(window).height() * 0.9, maxWidth: $(window).width() * 0.9 });
+    });
+
+    function changeQuantity(btn, n) {
+      // 獲取輸入框元素
+      var input = btn.parentNode.querySelector('#qty');
+      // 獲取原來的數量
+      var amount = parseInt(input.value);
+      // 當 amount=1 時不能再點擊 "-" 按鈕
+      // 使用 n < 0 表示點擊了减號按鈕
+      if (amount <= 1 && n < 0) {
+        alert("產品數量不得為0或為負數，請再修改數量!");
+        return (false);
+      } else if (amount >= 50 && n > 0) {
+        alert("由於採購限制，產品數量將限制在50以下!");
+        return (false);
+      }
+      // 根據加減來改變數量
+      input.value = amount + n;
+    }
+
+    var count = 0;
+
+    // 點擊按鈕時
+    $("#addcart").click(function() {
+        count++; // 計數器增加 1
+        $("header #cart-count").text(count); // 更新顯示的數字
+    });
+  </script>
+  <script type="text/javascript" src="js/gotop.js"></script>
+</body>
+
+</html>
