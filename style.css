@@ -263,14 +263,14 @@ header ul li a:hover,
 /* index_section2 */
 .index_section2 {
     height: auto;
-    padding: 60px 80px 0 100px;
+    padding: 60px 80px 0 80px;
 }
 
 .index_section2 h2 {
     color: var(--title-color);
     text-align: center;
     font-family: Alegreya;
-    margin: 60px 0;
+    margin-bottom: 60px;
 }
 
 .index_section2 .card {
@@ -1509,7 +1509,6 @@ footer {
 
 @media screen and (max-width: 1000px) {
 
-    .index_section1 h2,
     .index_section2 h2,
     .index_section3 h2,
     .index_section4 h2 {
