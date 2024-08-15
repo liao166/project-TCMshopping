@@ -263,7 +263,7 @@ header ul li a:hover,
 /* index_section2 */
 .index_section2 {
     height: auto;
-    padding: 60px 130px 0 130px;
+    padding: 60px 80px 0 100px;
 }
 
 .index_section2 h2 {
@@ -1457,10 +1457,6 @@ footer {
         padding: 50px;
     }
 
-    .index_section3 {
-        margin-top: 100px;
-    }
-
     .index_section4 .productcard .card .card-body {
         width: 300px;
     }
@@ -1521,6 +1517,10 @@ footer {
         font-size: 40px;
     }
 
+    .index_section2 {
+        padding: 60px;
+    }
+
     .index_section2 .card {
         width: 100%;
         display: flex;
@@ -1539,6 +1539,10 @@ footer {
         width: 100%;
         padding: 20px;
         margin-left: 0;
+    }
+
+    .index_section3 {
+        margin-top: 0px;
     }
 
     .index_section3 .product_class {
@@ -1594,10 +1598,6 @@ footer {
 
     .mobile {
         display: block;
-    }
-
-    .index_section2 {
-        padding: 60px 60px 0 60px;
     }
 
     .index_section2 .card .card-body .bor {
@@ -1754,7 +1754,7 @@ footer {
     }
 
     .contact .contactcard .card{
-        width: 65vw;
+        width: 100%;
     }
 
     .map iframe {
