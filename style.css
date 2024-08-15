@@ -1641,6 +1641,10 @@ footer {
         font-size: 12px;
     }
 
+    .about .abouttitle{
+        padding: 0 10px;
+    }
+
     .about .abouttitle h2 {
         font-size: 26px;
     }
