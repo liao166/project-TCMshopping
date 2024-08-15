@@ -452,8 +452,9 @@ header ul li a:hover,
     opacity: 0.5;
 }
 
-.index_section4 .product {
+.index_section4 .productcard {
     width: 100%;
+    /* padding: 50px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,7 +507,7 @@ header ul li a:hover,
     transition: all 0.1s ease-in-out;
 }
 
-.index_section4 .product .card {
+.index_section4 .productcard .card {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -514,18 +515,18 @@ header ul li a:hover,
     align-items: center;
 }
 
-.index_section4 .product .card .img {
+.index_section4 .productcard .card .img {
     position: relative;
     z-index: 2;
 }
 
-.index_section4 .product .card .img img {
+.index_section4 .productcard .card .img img {
     width: 15vw;
     height: 15vw;
     object-fit: cover;
 }
 
-.index_section4 .product .card .img .hidden {
+.index_section4 .productcard .card .img .hidden {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -533,7 +534,7 @@ header ul li a:hover,
     transition: .5s ease;
 }
 
-.index_section4 .product .card .img .toptext {
+.index_section4 .productcard .card .img .toptext {
     width: 60px;
     position: absolute;
     top: 20px;
@@ -545,11 +546,11 @@ header ul li a:hover,
     border-radius: 0 50px 50px 0;
 }
 
-.index_section4 .product .card .img:hover .hidden {
+.index_section4 .productcard .card .img:hover .hidden {
     opacity: 1;
 }
 
-.index_section4 .product .card .card-body {
+.index_section4 .productcard .card .card-body {
     width: 350px;
     background-color: #fff;
     margin-top: -80px;
@@ -563,15 +564,15 @@ header ul li a:hover,
     z-index: 1;
 }
 
-.index_section4 .product .card .card-body h3 {
+.index_section4 .productcard .card .card-body h3 {
     font-size: 25px;
 }
 
-.index_section4 .product .card .card-body p {
+.index_section4 .productcard .card .card-body p {
     font-size: 16px;
 }
 
-.index_section4 .product .card .card-body button {
+.index_section4 .productcard .card .card-body button {
     position: relative;
     border: 1px solid var(--button-color);
     color: var(--button-color);
@@ -586,12 +587,12 @@ header ul li a:hover,
     transition: all .5s ease;
 }
 
-.index_section4 .product .card .card-body button div {
+.index_section4 .productcard .card .card-body button div {
     font-size: 25px;
 }
 
-.index_section4 .product .card .card-body button:after,
-.index_section4 .product .card .card-body button:before {
+.index_section4 .productcard .card .card-body button:after,
+.index_section4 .productcard .card .card-body button:before {
     content: '';
     position: absolute;
     left: 0;
@@ -602,24 +603,24 @@ header ul li a:hover,
     z-index: -2;
 }
 
-.index_section4 .product .card .card-body button:hover {
+.index_section4 .productcard .card .card-body button:hover {
     z-index: 1;
     background: transparent;
     color: #fff;
 }
 
-.index_section4 .product .card .card-body button:before {
+.index_section4 .productcard .card .card-body button:before {
     transition: all ease .5s;
     background-color: var(--button-color);
     z-index: -1;
 }
 
-.index_section4 .product .card .card-body button:hover:after,
-.index_section4 .product .card .card-body button:hover:before {
+.index_section4 .productcard .card .card-body button:hover:after,
+.index_section4 .productcard .card .card-body button:hover:before {
     width: 100%;
 }
 
-.index_section4 .product .card .card-body a {
+.index_section4 .productcard .card .card-body a {
     text-decoration: none;
 }
 
@@ -1348,9 +1349,13 @@ header ul li a:hover,
     color: var(--button-color);
 }
 
+.map{
+    text-align: center;
+}
+
 .map iframe {
-    width: 100%;
-    height: 20vw;
+    width: 80%;
+    height: 30vw;
     margin-top: 60px;
 }
 
@@ -1456,7 +1461,7 @@ footer {
         margin-top: 100px;
     }
 
-    .index_section4 .product .card .card-body {
+    .index_section4 .productcard .card .card-body {
         width: 300px;
     }
 
@@ -1464,7 +1469,7 @@ footer {
         padding: 60px 60px;
     }
 
-    .index_section4 .product .card .img img {
+    .index_section4 .productcard .card .img img {
         width: 20vw;
         height: 20vw;
     }
@@ -1493,7 +1498,7 @@ footer {
         font-size: 25px;
     }
 
-    .index_section4 .product .card .card-body {
+    .index_section4 .productcard .card .card-body {
         width: 300px;
     }
 
@@ -1596,7 +1601,7 @@ footer {
     }
 
     .index_section2 .card .card-body .bor {
-        padding: 50px;
+        padding: 20px 30px;
     }
 
     .index_section2 .card .card-body h3 {
@@ -1615,21 +1620,25 @@ footer {
         padding: 60px 0;
     }
 
-    .index_section4 .product .card .img img {
+    .index_section4 .productcard .card .img img {
         width: 30vw;
         height: 30vw;
     }
 
-    .index_section4 .product .card .card-body {
+    .index_section4 .productcard .card .card-body {
         width: 40vw;
         gap: 10px;
     }
 
-    .index_section4 .product .card .card-body h3 {
+    .index_section4 .productcard .card .card-body h3 {
         font-size: 20px;
     }
 
-    .index_section4 .product .card .card-body p {
+    .index_section4 .productcard .card .card-body p {
+        font-size: 12px;
+    }
+
+    .index_section4 .productcard .card .card-body button {
         font-size: 12px;
     }
 
@@ -1692,5 +1701,64 @@ footer {
 
     .footer-1 .right .icons {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .index_section4 .productcard .card .card-body {
+        width: 56vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .about .card1 .card-body,
+    .about .card2 .card-body,
+    .about .card3 .card-body {
+        padding: 30px;
+    }
+
+    .about .card1 .card-body{
+        margin-left: -30px;
+    }
+
+    .about .card2 .card-body{
+        margin-right: -30px;
+    }
+
+    .about .card1 .card-body p,
+    .about .card2 .card-body p,
+    .about .card3 .card-body p {
+        font-size: 12px;
+    }
+
+    .product_content .productlist .card .card-body h3 {
+        font-size: 15px;
+    }
+
+    .product_content .productlist .card .card-body p {
+        font-size: 12px;
+    }
+
+    .product_content .productlist .card .card-body .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_content .productlist .card .card-body button .text {
+        font-size: 12px;
+    }
+
+    .contact{
+        padding: 60px 20px;
+    }
+
+    .contact .contactcard .card{
+        width: 65vw;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 50vw;
     }
 }
