@@ -1,158 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>興德堂中藥房</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>興德堂中藥房</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="headermenu">
-        <div class="desktop">
-          <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
-          <div class="nav">
-            <div class="icons">
-              <div class="single-search">
-                <input class="custom-input" type="text" name="" placeholder="Search...">
-                <a href="#" class="icon-area">
-                  <i class="fa fa-search"></i>
-                </a>
-              </div>
-              <a class="cart" href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span id="cart-count">0</span>
-              </a>
-              <a href="#"><i class="fa-regular fa-user"></i></a>
-            </div>
-            <ul>
-              <li><a href="about.html">關於我們</a></li>
-              <li><a href="product.html">產品介紹</a></li>
-              <li><a href="contact.html">聯絡我們</a></li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="mobile">
-          <div class="menubar">
-            <a href="index.html">
-              <img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo">
-            </a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <div class="iconbar">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
+  <header class="headermenu">
+    <div class="desktop">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="nav">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
             </a>
           </div>
-          <div id="myLinks">
-            <div class="icons">
-              <div class="single-search">
-                <input class="custom-input" type="text" name="" placeholder="Search...">
-                <a href="#" class="icon-area">
-                  <i class="fa fa-search"></i>
-                </a>
-              </div>
-              <a class="cart" href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span id="cart-count">0</span>
-              </a>
-              <a href="#"><i class="fa-regular fa-user"></i></a>
-            </div>
-            <div class="mobilenav">
-              <a href="about.html">關於我們</a>
-              <a href="product.html">產品介紹</a>
-              <a href="contact.html">聯絡我們</a>
-            </div>
-          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
         </div>
-      </header>
+        <ul>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="product.html">產品介紹</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+    </div>
 
-      <section class="contact">
-        <div class="contactcard">
-            <div class="card">
-                <input type="text" placeholder="姓名">
-                <input type="text" placeholder="email">
-                <textarea rows="6" placeholder="Message"></textarea>
-                <button>送出</button>
-            </div>
-            <div class="contactinfor">
-                <h1>興德堂中藥房</h1>
-                <p>聯絡電話：04-23381753</p>
-                <p>地址：台中市烏日區中山路二段91號</p>
-                <p>營業時間</p>
-                <p>周一至周日<b>09:00-12:00</b></p>
-            </div>
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.8828115144415!2d120.62550397480284!3d24.105616275047733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693c197b7f9d05%3A0x1f7fac675eacfd92!2zNDE05Y-w5Lit5biC54OP5pel5Y2A5Lit5bGx6Lev5LqM5q61OTHomZ8!5e0!3m2!1szh-TW!2stw!4v1723638162106!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </section>
-
-      <footer>
-        <div class="footer-1">
-          <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
-          <div class="right">
-            <div class="icons">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-line"></i></a>
-            </div>
-            <div>電話：04-23381753</div>
-            <div>地址：台中市烏日區中山路二段91號</div>
-            <div>E-mail：3111kr35@gmail.com</div>
+    <div class="mobile">
+      <div class="menubar">
+        <a href="index.html">
+          <img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="iconbar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
+        </a>
+      </div>
+      <div id="myLinks">
+        <div class="icons">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Search...">
+            <a href="#" class="icon-area">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+          <a class="cart" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
         </div>
-        <div class="footer-2">
+        <div class="mobilenav">
           <a href="about.html">關於我們</a>
           <a href="product.html">產品介紹</a>
           <a href="contact.html">聯絡我們</a>
         </div>
-        <div class="footer-3">
-          版權所有 copyright © 2023 興德堂中藥房 All Rights Reserved.
+      </div>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="contactcard">
+      <div class="card">
+        <input type="text" placeholder="姓名">
+        <input type="text" placeholder="email">
+        <textarea rows="6" placeholder="Message"></textarea>
+        <button>送出</button>
+      </div>
+      <div class="contactinfor">
+        <h1>興德堂中藥房</h1>
+        <p>聯絡電話：04-23381753</p>
+        <p>地址：台中市烏日區中山路二段91號</p>
+        <p>營業時間</p>
+        <p>周一至周日<b>09:00-12:00</b></p>
+      </div>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.8828115144415!2d120.62550397480284!3d24.105616275047733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693c197b7f9d05%3A0x1f7fac675eacfd92!2zNDE05Y-w5Lit5biC54OP5pel5Y2A5Lit5bGx6Lev5LqM5q61OTHomZ8!5e0!3m2!1szh-TW!2stw!4v1723638162106!5m2!1szh-TW!2stw"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-1">
+      <a href="index.html"><img src="images/中藥房Logo.png" alt="興德堂中藥房" title="興德堂中藥房" class="logo"></a>
+      <div class="right">
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-line"></i></a>
         </div>
-      </footer>
-      <script>
-        var isAtTop = true; // 初始時頁面在頂部
-        var isAnimating = false; // 動畫是否已經觸發過
-        $(window).scroll(function () {
-          $(".headermenu").each(function () {
-            var pos = $(this).offset().top; // 選單的頂部位置
-            var winTop = $(window).scrollTop(); // 當前滾動位置
-    
-            // 檢查是否回到頁面頂部
-            if (winTop == 0) {
-              isAtTop = true;
-              isAnimating = false; // 重置動畫狀態
-              $(this).removeClass("slide");
-            } else {
-              isAtTop = false;
-            }
-    
-            if (!isAtTop && pos < winTop + 600 && !isAnimating) {
-              isAnimating = true;
-              $(this).addClass("slide");
-            }
-          });
-        });
-    
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "flex") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "flex";
-          }
-          var y = document.getElementsByClassName('iconbar');
-          y[0].classList.toggle("change");
+        <div>電話：04-23381753</div>
+        <div>地址：台中市烏日區中山路二段91號</div>
+        <div>E-mail：3111kr35@gmail.com</div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <a href="about.html">關於我們</a>
+      <a href="product.html">產品介紹</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+    <div class="footer-3">
+      版權所有 copyright © 2023 興德堂中藥房 All Rights Reserved.
+    </div>
+  </footer>
+  <script>
+    var isAtTop = true; // 初始時頁面在頂部
+    var isAnimating = false; // 動畫是否已經觸發過
+    $(window).scroll(function () {
+      $(".headermenu").each(function () {
+        var pos = $(this).offset().top; // 選單的頂部位置
+        var winTop = $(window).scrollTop(); // 當前滾動位置
+
+        // 檢查是否回到頁面頂部
+        if (winTop == 0) {
+          isAtTop = true;
+          isAnimating = false; // 重置動畫狀態
+          $(this).removeClass("slide");
+        } else {
+          isAtTop = false;
         }
-      </script>
-      <script type="text/javascript" src="js/gotop.js"></script>
+
+        if (!isAtTop && pos < winTop + 600 && !isAnimating) {
+          isAnimating = true;
+          $(this).addClass("slide");
+        }
+      });
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.height && x.style.height !== "0px") {
+        x.style.height = x.scrollHeight + "px";
+        requestAnimationFrame(() => {
+          x.style.height = "0px";
+        });
+      } else {
+        requestAnimationFrame(() => {
+          x.style.height = x.scrollHeight + "px";
+        });
+      }
+      var y = document.getElementsByClassName('iconbar');
+      y[0].classList.toggle("change");
+    }
+  </script>
+  <script type="text/javascript" src="js/gotop.js"></script>
 </body>
+
 </html>
