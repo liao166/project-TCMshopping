@@ -917,10 +917,11 @@ header ul li a:hover,
 .accordion:after {
     content: '\002B';
     display: flex;
+    align-items: center;
     color: #fff;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-top: 3px;
 }
 
 .active:after {
@@ -928,7 +929,7 @@ header ul li a:hover,
 }
 
 .item {
-    padding: 0 18px;
+    padding: 0 6px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -957,6 +958,12 @@ header ul li a:hover,
     display: inline-block;
     text-decoration: none;
     color: #1d1d1d;
+    transition: .5s;
+}
+
+.item ul li a:hover{
+    color: #ffffff;
+    background-color: #006c86;
 }
 
 .item ul li::after {
@@ -1097,7 +1104,7 @@ header ul li a:hover,
 }
 
 .product_content .productlist .card .card-body button:hover:after,
-.product_content .productlist .card .card-body button:hover::before {
+.product_content .productlist .card .card-body button:hover:before {
     width: 100%;
 }
 
