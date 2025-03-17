@@ -437,24 +437,23 @@
     var isAtTop = true; // 初始時頁面在頂部
     var isAnimating = false; // 動畫是否已經觸發過
     $(window).scroll(function () {
-      $(".headermenu").each(function () {
-        var pos = $(this).offset().top; // 選單的頂部位置
-        var winTop = $(window).scrollTop(); // 當前滾動位置
+      var $menu = $(".headermenu");
+      var pos = $menu.offset().top; // 選單的頂部位置
+      var winTop = $(window).scrollTop(); // 當前滾動位置
 
-        // 檢查是否回到頁面頂部
-        if (winTop == 0) {
-          isAtTop = true;
-          isAnimating = false; // 重置動畫狀態
-          $(this).removeClass("slide");
-        } else {
-          isAtTop = false;
-        }
+      // 檢查是否回到頁面頂部
+      if (winTop == 0) {
+        isAtTop = true;
+        isAnimating = false; // 重置動畫狀態
+        $menu.removeClass("slide");
+      } else {
+        isAtTop = false;
+      }
 
-        if (!isAtTop && pos < winTop + 600 && !isAnimating) {
-          isAnimating = true;
-          $(this).addClass("slide");
-        }
-      });
+      if (!isAtTop && pos < winTop + 200 && !isAnimating) {
+        isAnimating = true;
+        $menu.addClass("slide");
+      }
     });
 
     function myFunction() {
